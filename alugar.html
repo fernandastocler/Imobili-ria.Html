@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vale Imobiliária</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .header {
+      background-color: #0066cc;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .header .logo {
+      font-size: 40px;
+      font-weight: bold;
+      color: white;
+      text-transform: uppercase;
+    }
+
+    .nav {
+      background-color: #e74c3c;
+      padding: 12px 0;
+      text-align: center;
+    }
+
+    .nav a {
+      color: white;
+      font-size: 16px;
+      margin: 0 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .nav a:hover {
+      text-decoration: underline;
+    }
+
+    .main-content {
+      padding: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-size: 30px;
+      color: #333;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .search-box {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+
+    .search-box input {
+      width: 70%;
+      padding: 15px;
+      font-size: 16px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .search-box button {
+      width: 25%;
+      padding: 15px;
+      background-color: #0066cc;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .search-box button:hover {
+      background-color: #005bb5;
+    }
+
+    .property-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .property-card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .property-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .property-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .property-card h3 {
+      margin-top: 15px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .property-card p {
+      font-size: 16px;
+      margin: 10px 0;
+      color: #777;
+    }
+
+    .property-card .price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #e74c3c;
+      margin-top: 10px;
+    }
+
+    .property-card .details {
+      font-size: 16px;
+      margin-top: 15px;
+      color: #555;
+    }
+
+    .section {
+      margin-bottom: 60px;
+      padding: 40px 20px;
+      background-color: #f1f1f1;
+      border-radius: 8px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-title-blue {
+      font-size: 28px;
+      color: #0066cc;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .footer {
+      background-color: #0066cc;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 50px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo">Vale Imobiliária</div>
+  </div>
+
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="venda.html">Comprar</a>
+    <a href="alugar.html">Alugar</a>
+    <a href="contato.htm">Contato</a>
+  </div>
+
+  <div class="main-content">
+    <div class="search-box">
+      <input type="text" placeholder="Buscar por imóvel, bairro ou cidade...">
+      <button>Buscar</button>
+    </div>
+
+    <!-- Seção de Apartamento para Alugar -->
+    <div class="section">
+      <div class="section-title-blue">Apartamento Aluga-se</div>
+      <div class="property-list">
+        <div class="property-card">
+          <img src="img/13.webp" alt="Imagem do imóvel">
+          <h3>Alugo apartamento novo com 3 quartos no Parque Iracema, próximo ao Mega Atacadista</h3>
+          <p>3 quartos | 2 banheiros | 52m²</p>
+          <p class="price">R$ 3.400</p>
+          <div class="details">Condomínio com portaria 24h, dispõe de 3 elevadores, mercadinho, salão de festas climatizado, academia, quadra e playground e outros serviços. </div>
+        </div>
+
+        <div class="property-card">
+          <img src="img/15.webp" alt="Imagem do imóvel">
+          <h3>Alugo apartamento no park sul por temporada ou a longo prazo.</h3>
+          <p>1 quartos | 1 banheiros | </p>
+          <p class="price">R$ 2.400</p>
+          <div class="details">Apartamento mobiliado, alto padrão.</div>
+        </div>
+
+        
+        <div class="property-card">
+            <img src="img/16.webp" alt="Imagem do imóvel">
+            <h3>Apartamento com 2 dormitórios para alugar, 49 m² por R$ 1.594/mês - Éden - Sorocaba/SP</h3>
+            <p>2 quartos | 1 banheiros | 49m²</p>
+            <p class="price">R$ 1.120</p>
+            <div class="details">Situado em uma região valorizada, próximo a escolas, supermercados e com fácil acesso às principais vias da cidade.</div>
+          </div>
+
+          
+        <div class="property-card">
+            <img src="img/17.webp" alt="Imagem do imóvel">
+            <h3>Apartamento 3 quartos para alugar ou comprar em Bigorrilho - Curitiba</h3>
+            <p>3 quartos | 3 banheiros | 110m²</p>
+            <p class="price">R$ 2.300</p>
+            <div class="details">**todas as informações e valores sujeitas a confirmação e alteração sem aviso prévio**</div>
+          </div>
+
+          
+        <div class="property-card">
+            <img src="img/18.webp" alt="Imagem do imóvel">
+            <h3>Alugo apartamento de 2 quartos em Jardim Vitória, Itabuna - BA</h3>
+            <p>2 quartos | 2 banheiros |  100m²</p>
+            <p class="price">R$  2.300</p>
+            <div class="details">- próximo de academias, shopping, padaria, posto de gasolina e etc </div>
+          </div>
+
+          
+        <div class="property-card">
+            <img src="img/4.4.webp" alt="Imagem do imóvel">
+            <h3>Aluga se apto 2 quartos/suíte , com varanda toda em fechamento de vidro em localização pri</h3>
+            <p>2 quartos | 1 banheiros | 131m²</p>
+            <p class="price">R$ 2.200</p>
+            <div class="details">Casa em Condomínio fechado 91m2 e 14,00m2 da área externa com churrasqueira e pia completando a área gourmet, com total de 105,00m2, em Interlagos. 
+            </div>
+          </div>
+    </div>
+
+    <!-- Seção de Casa para Alugar -->
+    <div class="section">
+      <div class="section-title-blue">casais Aluga-se</div>
+      <div class="property-list">
+        <div class="property-card">
+          <img src="img/19.webp" alt="Imagem do imóvel">
+          <h3>Alugo casa na praia de Itanhaém temporada disponível nesse final de semana</h3>
+          <p>3 quartos | 3 banheiro | 213m²</p>
+          <p class="price">R$ 500,00</p>
+          <div class="details">SP-SP</div>
+        </div>
+
+        <div class="property-card">
+          <img src="img/21.webp" alt="Imagem do imóvel">
+          <h3>Casa maravilhosa com piscina, vista montanhas, 4 quartos, Quebra Frascos</h3>
+          <p>4 quarto | 3 banheiro | 400m²</p>
+          <p class="price">R$ 2.850</p>
+          <div class="details">Praça da Democracia
+            Quebra Frascos, Teresópolis, RJ, 25966010</div>
+        </div>
+        
+        <div class="property-card">
+            <img src="img/22.webp" alt="Imagem do imóvel">
+            <h3>R Salvador Rosa - Jardim Previdência</h3>
+            <p>3 quarto | 3 banheiro | 240m²</p>
+            <p class="price">R$ 4.600</p>
+            <div class="details">Código do anúncio: PR55430
+            </div>
+          </div>
+
+          <div class="property-card">
+            <img src="img/23.webp" alt="Imagem do imóvel">
+            <h3>casa - Taquaral - Campinas</h3>
+            <p>2 quarto | 3 banheiro | 171m²</p>
+            <p class="price">R$ 3.800</p>
+            <div class="details">Rua Pedro Anderson
+              Taquaral, Campinas, SP, 13076070</div>
+          </div>
+
+          <div class="property-card">
+            <img src="img/24.webp" alt="Imagem do imóvel">
+            <h3>casa - Parque Taquaral - Campinas</h3>
+            <p>4 quarto | 5 banheiro | 700m²</p>
+            <p class="price">R$ 1.280.000</p>
+            <div class="details">Estou próximo do imóvel e podemos fazer rapidamente a visita.
+        </div>
+        
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>© 2024 Vale Imobiliária | Todos os direitos reservados</p>
+</div>
+
+</body>
+</html>
