@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vale Imobiliária</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .header {
+      background-color: #0066cc;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .header .logo {
+      font-size: 40px;
+      font-weight: bold;
+      color: white;
+      text-transform: uppercase;
+    }
+
+    .nav {
+      background-color: #e74c3c;
+      padding: 12px 0;
+      text-align: center;
+    }
+
+    .nav a {
+      color: white;
+      font-size: 16px;
+      margin: 0 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .nav a:hover {
+      text-decoration: underline;
+    }
+
+    .main-content {
+      padding: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-size: 30px;
+      color: #333;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .search-box {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+
+    .search-box input {
+      width: 70%;
+      padding: 15px;
+      font-size: 16px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .search-box button {
+      width: 25%;
+      padding: 15px;
+      background-color: #0066cc;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .search-box button:hover {
+      background-color: #005bb5;
+    }
+
+    .property-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .property-card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .property-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .property-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .property-card h3 {
+      margin-top: 15px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .property-card p {
+      font-size: 16px;
+      margin: 10px 0;
+      color: #777;
+    }
+
+    .property-card .price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #e74c3c;
+      margin-top: 10px;
+    }
+
+    .property-card .details {
+      font-size: 16px;
+      margin-top: 15px;
+      color: #555;
+    }
+
+    .section {
+      margin-bottom: 60px;
+      padding: 40px 20px;
+      background-color: #f1f1f1;
+      border-radius: 8px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-title-blue {
+      font-size: 28px;
+      color: #0066cc;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .footer {
+      background-color: #0066cc;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 50px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo">Vale Imobiliária</div>
+  </div>
+
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="venda.html">Comprar</a>
+    <a href="alugar.html">Alugar</a>
+    <a href="#">Simulador</a>
+    <a href="contato.htm">Contato</a>
+  </div>
+
+  <div class="main-content">
+    <div class="search-box">
+      <input type="text" placeholder="Buscar por imóvel, bairro ou cidade...">
+      <button>Buscar</button>
+    </div>
+
+    <!-- Seção de Casas para Comprar -->
+    <div class="section">
+      <div class="section-title-blue">Casas à Venda</div>
+      <div class="property-list">
+        <div class="property-card">
+          <img src="img/1.2.webp" alt="Imagem do imóvel">
+          <h3>VENDO ou ALUGO casa Cond Turim cohajap</h3>
+          <p>4 quartos | 3 banheiros | 120m²</p>
+          <p class="price">R$ 910.000</p>
+          <div class="details">Rua Anapurus
+            Quintas do Calhau, São Luís, MA, 65072884</div>
+        </div>
+
+        <div class="property-card">
+          <img src="img/2.2.webp" alt="Imagem do imóvel">
+          <h3>Casa em Unamar</h3>
+          <p>2 quartos | 4 banheiros | 360m²</p>
+          <p class="price">R$ 249.000</p>
+          <div class="details">Ampla área de lazer com piscina e churrasqueira.</div>
+        </div>
+
+        
+        <div class="property-card">
+            <img src="img/5.5.webp" alt="Imagem do imóvel">
+            <h3>Casa com 04 quartos à venda no Jardim Prudência!</h3>
+            <p>4 quartos | 5 banheiros | 367m²</p>
+            <p class="price">R$ 1.499.800</p>
+            <div class="details">Rua Professor Luciano Venere Decourt
+                Jardim Prudência, São Paulo, SP, 04648135</div>
+          </div>
+
+          
+        <div class="property-card">
+            <img src="img/3.3.webp" alt="Imagem do imóvel">
+            <h3>Casa bem no centro direto com o proprietário</h3>
+            <p>3 quartos | 2 banheiros | 90m²</p>
+            <p class="price">R$ 490.000</p>
+            <div class="details">Casa - Padrão em Mongaguá, Flórida Mirim
+                ** ATENÇÃO **</div>
+          </div>
+
+          
+        <div class="property-card">
+            <img src="img/6.6.webp" alt="Imagem do imóvel">
+            <h3>Casa á Venda Condominio Fechado - 3 Suítes, 4 vagas - Santana de Parnaiba SP.</h3>
+            <p>3 quartos | 5 banheiros | 440m²</p>
+            <p class="price">R$ 5.300.000</p>
+            <div class="details">Avenida Yojiro Takaoka - de 5451/5452 ao fim
+                Alphaville, Santana de Parnaíba, SP, 06540001</div>
+          </div>
+
+          
+        <div class="property-card">
+            <img src="img/4.4.webp" alt="Imagem do imóvel">
+            <h3>Casa no Condomínio Morada Dos Pássaros</h3>
+            <p>3 quartos | 4 banheiros | 91m²</p>
+            <p class="price">R$ 800.000</p>
+            <div class="details">Casa em Condomínio fechado 91m2 e 14,00m2 da área externa com churrasqueira e pia completando a área gourmet, com total de 105,00m2, em Interlagos. 
+            </div>
+          </div>
+    </div>
+
+    <!-- Seção de Apartamentos para Comprar -->
+    <div class="section">
+      <div class="section-title-blue">Apartamentos à Venda</div>
+      <div class="property-list">
+        <div class="property-card">
+          <img src="img/7.webp" alt="Imagem do imóvel">
+          <h3>Casa Sobrado / 3 suítes 2 com closet e sacada/ 213m² / Piscina / Jardim resid. Golden Park</h3>
+          <p>3 quartos | 5 banheiro | 213m²</p>
+          <p class="price">R$ 1.540.000</p>
+          <div class="details">Rua Expedicionário Mário Baccaro
+            Jardim Residencial Golden Park, Jacareí, SP, 12322012</div>
+        </div>
+
+        <div class="property-card">
+          <img src="img/8.webp" alt="Imagem do imóvel">
+          <h3>OPORTUNIDADE EM CASA AMARELA | Apt com 64m² | 3 Quartos com 1 Suíte | Andar Alto</h3>
+          <p>1 quarto | 1 banheiro | 50m²</p>
+          <p class="price">R$ 250.000</p>
+          <div class="details">Perfeito para solteiros ou casais, com vista para a cidade.</div>
+        </div>
+        
+        <div class="property-card">
+            <img src="img/9.webp" alt="Imagem do imóvel">
+            <h3>Casa Jardins - Moura Dubeux !</h3>
+            <p>3 quarto | 3 banheiro | 101m²</p>
+            <p class="price">R$ 952.804</p>
+            <div class="details">Para mais informações entre em contato:
+                Leonardo Lins - Consultor Imobiliário</div>
+          </div>
+
+          <div class="property-card">
+            <img src="img/10.webp" alt="Imagem do imóvel">
+            <h3>Casa de condomínio de 220m² no Olho D'água com 4 suítes</h3>
+            <p>4 quarto | 5 banheiro | 200m²</p>
+            <p class="price">R$ 250.000</p>
+            <div class="details">Área de lazer com salão de festas, churrasqueira, piscina adulto e infantil, playground e quadra poliesportiva.</div>
+          </div>
+
+          <div class="property-card">
+            <img src="img/11.webp" alt="Imagem do imóvel">
+            <h3>Lindo apartamento de 130 mts, 4 dormitórios ,2 vagas excelente localizacao , av Dr.mario</h3>
+            <p>4 quarto | 4 banheiro | 130m²</p>
+            <p class="price">R$ 1.420.000</p>
+            <div class="details">Venha morar num clube.., e ter qualidade de vida com tudo proximo, seguranca e conforto pra sua familia, Apartamento com 130metros, sala e varanda , 4 dormitórios, 2 vagas de garagem, andar alto.</div>
+          </div>
+
+          <div class="property-card">
+            <img src="img/12.webp" alt="Imagem do imóvel">
+            <h3>APARTAMENTO - VENDA - PARADA INGLESA</h3>
+            <p>2 quarto | 1 banheiro | 49m²</p>
+            <p class="price">R$ 370.000</p>
+            <div class="details">Acabamento de primeira linha nos ambientes.
+
+                Prédio com elevador.
+                </div>
+          </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p>© 2024 Vale Imobiliária | Todos os direitos reservados</p>
+  </div>
+
+</body>
+</html>
